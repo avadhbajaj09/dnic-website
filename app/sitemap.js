@@ -1,0 +1,3 @@
+import {books} from '../lib/books';
+const base=process.env.NEXT_PUBLIC_SITE_URL||'https://purple-skunk-231017.hostingersite.com';
+export default function sitemap(){const paths=['','about-dnic','about-nirbhay-chauhan','books','resume-writing','videos','community','reviews','faq','contact','developer-interview-books','qa-interview-books','privacy-policy','terms-and-conditions','resume-service-policy','amazon-disclosure',...books.map(b=>`books/${b.slug}`)];return paths.map((path)=>({url:`${base}/${path}${path?'/':''}`,lastModified:new Date(),changeFrequency:'monthly',priority:path===''?1:path==='books'?0.9:0.6}))}

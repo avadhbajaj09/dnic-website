@@ -1,0 +1,1 @@
+export default function robots(){const live=process.env.NEXT_PUBLIC_INDEX_LIVE==='true';return {rules:[{userAgent:'*',allow:live?'/':undefined,disallow:live?undefined:'/'}],sitemap:live?'https://dnic.in/sitemap.xml':undefined}}

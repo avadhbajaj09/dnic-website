@@ -1,0 +1,3 @@
+import Link from "next/link";
+export const metadata={title:"Resume Enquiry Received",robots:{index:false,follow:false}};
+export default function ThankYou(){return <section className="shell thank-you"><span className="thank-icon">✓</span><span className="eyebrow">THANK YOU FOR REACHING OUT</span><h1>Your enquiry has<br/><em>been submitted.</em></h1><p>Check your inbox for your recommended package, documents checklist and payment instructions. Reply to the same email if you have questions.</p><p className="fineprint">Resume work starts only after Nirbhay personally verifies the payment. Check your spam folder if the email does not appear.</p><Link className="button button-dark" href="/">Back to homepage ↗</Link></section>}
